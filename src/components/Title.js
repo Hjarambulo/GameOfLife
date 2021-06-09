@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// this component shows the title of the aplication
 class Title extends Component{
     render(){
         

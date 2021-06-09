@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import {ButtonToolbar, Button, DropdownButton, Dropdown} from 'react-bootstrap';
 
+// this component shows the buttons to control the game using the props from the app file
 class Buttons extends Component{
 
+    // with this function we take the event key in te dropdown buttons to tell the aplication which
+    // one of the sizes of grid we chose 
     handleSelect = (evt) => {
         this.props.gridSize(evt);
     }

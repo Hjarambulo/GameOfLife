@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Box from './Box'
 
+// this component shows the grid where the cells are placed
 class Grid extends Component{
     
     render(){

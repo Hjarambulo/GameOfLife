@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {ButtonToolbar, Button} from 'react-bootstrap';
 
+// this component shows the refresh time and buttons to control it, slow to slow the refresh time 
+// and fast to make it faster
+
 class Speed extends Component{
 
     render(){
