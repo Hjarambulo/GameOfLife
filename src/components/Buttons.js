@@ -18,6 +18,9 @@ class Buttons extends Component{
                     <Button variant='danger' onClick={this.props.pauseButton}>{' '}
                         Pause
                     </Button>
+                    <Button variant='secondary' onClick={this.props.next}>{' '}
+                        Next
+                    </Button>
                     <Button variant='secondary' onClick={this.props.clear}>{' '}
                         Clear
                     </Button>

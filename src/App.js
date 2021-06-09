@@ -54,6 +54,14 @@ class App extends Component{
         clearInterval(this.intervalId);
     }
 
+    // metod to move to the next generation manually
+    next = () =>{
+        this.playButton();
+        setTimeout(() => {
+            clearInterval(this.intervalId);
+        }, this.speed);
+    }
+
     // metod to speed up the simulation
     fast = () => {
         this.speed -= 20;
@@ -166,6 +174,7 @@ class App extends Component{
                 <Buttons
                 playButton = {this.playButton}
                 pauseButton = {this.pauseButton}
+                next = {this.next}
                 clear = {this.clear}
                 seed = {this.seed}
                 gridSize = {this.gridSize}
